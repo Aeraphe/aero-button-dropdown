@@ -7,7 +7,7 @@ import {Component, Input, EventEmitter, Output,  OnInit} from 'angular2/core';
   <div class="col-lg-3">
 
       <div  class="input-group-btn" [class.open]="showDropList">
-        <button (click)="showDropListAction()" type="button" class="btn btn-white  btn-sm ">{{buttonTitle}} <span class="caret"></span></button>
+        <button (click)="showDropListAction()" type="button" class="btn  btn-sm {{buttonCssClass}} ">{{buttonTitle}} <span class="caret"></span></button>
         <ul (mouseleave)="showDropListAction()" class="dropdown-menu ">
                 
           <li  *ngFor="let item of buttonData"><i class=" {{item.icon}} text-danger" > </i><a (click)="clickEvent(item.action)"> {{item.name}}</a> </li>
@@ -33,6 +33,7 @@ export /**
 
     @Input() buttonData: Array<any>;
     @Input() buttonTitle:string="Button Title";
+    @Input() buttonCssClass:string='btn-white';
     @Output() public buttonClickEvent = new EventEmitter<Object>();
 
     public showDropList: boolean = false;
