@@ -1,0 +1,12 @@
+{
+    "name": "aero-material-button-dropdown",
+    "version": "1.0.0",
+    "description": "Aero Material Design Components for Angular 2 RC4 (Bootstrap CSS)",
+    "main": "",
+    "scripts": {
+        "test": " echo \"Erro: no teste specified\" && exit 1 "
+    },
+    "keywords": ["angular2", "material", "components"],
+    "author": "Alberto Eduardo de Castro <alberto.aeraph@gmail.com>",
+    "license": "ISC"
+}
